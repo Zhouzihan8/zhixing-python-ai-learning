@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="从 Python 基础、工程与科学计算，到深度学习、大模型、RAG 与 Agent 的循序渐进中文学习站。">
+<title>知行 · 我的 Python 与 AI 学习书桌</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<aside class="sidebar">
+ <a class="brand" href="#map"><svg width="29" height="30" viewBox="0 0 29 30" aria-hidden="true"><path d="M4 5h8l3 4 3-4h7v20h-8l-3-4-3 4H4z" fill="none" stroke="currentColor" stroke-width="2"/></svg><span>知行<span class="brand-sub">我的学习书桌</span></span></a>
+ <label class="search-label" for="search">查找知识点</label><input id="search" type="search" placeholder="函数、注意力、检索…">
+ <nav id="course-nav" aria-label="课程目录"></nav>
+ <div class="sidebar-foot">从 Python 到大模型<br>在后面的任务中，继续使用前面的知识。</div>
+</aside>
+<div class="workspace">
+ <header><span id="breadcrumb">课程正在载入</span><div><button id="home">知识树</button><button id="menu-toggle" aria-expanded="false" aria-controls="course-nav">课程目录</button><button id="toggle-lab" aria-expanded="false" aria-controls="lab">打开练习区</button><button id="print">打印讲义</button><button id="download">下载本课 .py</button></div></header>
+ <main class="sheet">
+  <article id="reading"><p>正在读取课程…</p></article>
+  <aside class="lab" id="lab" aria-label="Python 实践区">
+   <div class="lab-top"><span>动手试一试</span><span id="runtime">Python</span></div>
+   <p class="lab-intro">先预测，再运行并改一个条件。首次运行需要联网加载浏览器版 Python；PyTorch、GPU 和真实模型项目请下载练习包，在本机 VS Code 中运行。</p>
+   <div class="local-practice"><button id="open-vscode">下载本课 VS Code 练习包</button><p id="vscode-status"></p><a id="vscode-link">下载练习包 ↗</a></div>
+   <label for="code">Python 代码 <span>Tab 缩进 · Ctrl / ⌘ + Enter 运行</span></label>
+   <textarea id="code" spellcheck="false" aria-label="可编辑 Python 代码"></textarea>
+   <label for="stdin">标准输入 <span>每行对应一次 input()</span></label><textarea id="stdin" rows="2" spellcheck="false"></textarea>
+   <div class="actions"><button id="run" class="primary">运行 Python <span>↗</span></button><button id="reset">还原示例</button></div>
+   <p id="run-status" aria-live="polite">每次运行从干净的练习目录开始。</p>
+   <pre id="output" aria-label="运行结果" aria-live="polite">输出会出现在这里。</pre>
+   <details id="files"><summary>随课文件与生成结果</summary><div id="file-list"></div></details>
+   <details><summary>初始实验的参考输出</summary><pre id="expected"></pre></details>
+   <section class="task"><h2>把它改一改</h2><p id="task"></p><details><summary>需要一点提示</summary><p id="hint"></p></details><button id="solution" aria-expanded="false" aria-controls="solution-code">查看参考思路与代码</button><pre id="solution-code" hidden></pre></section>
+   <p class="lab-note">网页代码运行在浏览器 Worker 的临时目录中，不访问你电脑上的 VS Code 文件。浏览器运行适合标准库和兼容包；PyTorch、数据库服务与真实模型实践请下载项目包到本机。</p>
+  </aside>
+ </main>
+</div>
+<script src="knowledge-map.js"></script><script src="demos.js"></script><script src="app.js"></script>
+</body>
+</html>

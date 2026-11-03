@@ -1,0 +1,1 @@
+[{"id": "a", "expected": "positive", "response": "{\"label\":\"positive\"}"}, {"id": "b", "expected": "negative", "response": "{\"label\":\"positive\"}"}, {"id": "c", "expected": "negative", "response": "not json"}]

@@ -1,0 +1,17 @@
+[
+  {
+    "id": "p1",
+    "text": "This lesson is clear and useful.",
+    "expected": "positive"
+  },
+  {
+    "id": "n1",
+    "text": "This explanation is confusing and unhelpful.",
+    "expected": "negative"
+  },
+  {
+    "id": "p2",
+    "text": "I enjoyed working through the example.",
+    "expected": "positive"
+  }
+]

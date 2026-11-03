@@ -1,0 +1,52 @@
+[
+  [
+    "count_words",
+    [
+      "Python AI python"
+    ],
+    {
+      "python": 2,
+      "ai": 1
+    }
+  ],
+  [
+    "count_words",
+    [
+      "   "
+    ],
+    {}
+  ],
+  [
+    "count_words",
+    [
+      "ai python ai",
+      [
+        "ai"
+      ]
+    ],
+    {
+      "python": 1
+    }
+  ],
+  [
+    "top_words",
+    [
+      {
+        "python": 2,
+        "ai": 2,
+        "model": 1
+      },
+      2
+    ],
+    [
+      [
+        "ai",
+        2
+      ],
+      [
+        "python",
+        2
+      ]
+    ]
+  ]
+]

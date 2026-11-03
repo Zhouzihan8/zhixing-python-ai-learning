@@ -1,0 +1,68 @@
+[
+  [
+    "evaluate_records",
+    [
+      [
+        {
+          "id": "a",
+          "expected": "positive",
+          "response": "{\"label\":\"positive\"}"
+        },
+        {
+          "id": "b",
+          "expected": "negative",
+          "response": "not json"
+        },
+        {
+          "id": "c",
+          "expected": "positive",
+          "response": "[]"
+        }
+      ]
+    ],
+    {
+      "total": 3,
+      "valid": 1,
+      "correct": 1,
+      "accuracy": 0.3333333333333333,
+      "failed_ids": [
+        "b",
+        "c"
+      ]
+    }
+  ],
+  [
+    "evaluate_records",
+    [
+      []
+    ],
+    {
+      "total": 0,
+      "valid": 0,
+      "correct": 0,
+      "accuracy": 0,
+      "failed_ids": []
+    }
+  ],
+  [
+    "evaluate_records",
+    [
+      [
+        {
+          "id": "bad-field",
+          "expected": "negative",
+          "response": "{\"label\": []}"
+        }
+      ]
+    ],
+    {
+      "total": 1,
+      "valid": 0,
+      "correct": 0,
+      "accuracy": 0,
+      "failed_ids": [
+        "bad-field"
+      ]
+    }
+  ]
+]

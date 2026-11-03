@@ -1,0 +1,69 @@
+[
+  [
+    "clean_rows",
+    [
+      [
+        {
+          "id": "a",
+          "topic": " Python ",
+          "minutes": "30"
+        },
+        {
+          "id": "a",
+          "topic": "python",
+          "minutes": "60"
+        },
+        {
+          "id": "b",
+          "topic": "AI",
+          "minutes": "bad"
+        },
+        {
+          "id": "c",
+          "topic": " ",
+          "minutes": "20"
+        }
+      ]
+    ],
+    [
+      {
+        "id": "a",
+        "topic": "python",
+        "minutes": 30
+      }
+    ]
+  ],
+  [
+    "summarize",
+    [
+      [
+        {
+          "id": "a",
+          "topic": "python",
+          "minutes": 30
+        },
+        {
+          "id": "b",
+          "topic": "python",
+          "minutes": 45
+        }
+      ]
+    ],
+    {
+      "python": 75
+    }
+  ],
+  [
+    "clean_rows",
+    [
+      [
+        {
+          "id": "x",
+          "topic": "ai",
+          "minutes": "-1"
+        }
+      ]
+    ],
+    []
+  ]
+]
